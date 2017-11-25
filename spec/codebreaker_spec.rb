@@ -11,7 +11,7 @@ RSpec.describe Codebreaker do
     it "prints a greeting" do
       expect(output).to receive(:puts).with('Welcome to Codebreaker')
 
-      game.start(secret_number)
+      game.welcome
     end
 
     it "asks for the first guess" do
